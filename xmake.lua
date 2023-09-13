@@ -14,6 +14,9 @@ set_languages("c++23")
 set_optimize("faster")
 set_warnings("allextra", "error")
 
+-- add rules
+add_rules("plugin.vsxmake.autoupdate")
+
 -- require packages
 add_requires("commonlibsf")
 
