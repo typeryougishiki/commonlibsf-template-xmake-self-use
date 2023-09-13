@@ -23,7 +23,7 @@ target("template-commonlibsf")
 
     -- add commonlibsf plugin
     add_rules("@commonlibsf/plugin", {
-        name = "Test",
+        name = "template-commonlibsf",
         author = "Author Name",
         description = "Plugin Description",
         email = "user@site.com"
