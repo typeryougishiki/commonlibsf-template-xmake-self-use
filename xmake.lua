@@ -20,13 +20,13 @@ add_rules("plugin.vsxmake.autoupdate")
 -- require packages
 add_requires("commonlibsf")
 
-target("template-commonlibsf")
+target("commonlibsf-template")
     -- add packages
     add_packages("commonlibsf", "fmt", "spdlog")
 
     -- add commonlibsf plugin
     add_rules("@commonlibsf/plugin", {
-        name = "template-commonlibsf",
+        name = "commonlibsf-template",
         author = "Author Name",
         description = "Plugin Description",
         email = "user@site.com"
