@@ -37,3 +37,7 @@ xmake project -k compile_commands --lsp=clangd
 ```
 
 > ***Note:*** *This will generate a `compile_commands.json` file in the **project's root directory***
+
+
+## Documentation
+Please refer to the [Wiki](../../wiki/Home) for more advanced topics.
