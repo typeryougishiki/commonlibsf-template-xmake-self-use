@@ -8,8 +8,8 @@ This is a basic plugin template using CommonLibSF.
 
 ## Getting Started
 ```bat
-git clone https://github.com/Starfield-Reverse-Engineering/template-commonlibsf-xmake
-cd template-commonlibsf-xmake
+git clone https://github.com/Starfield-Reverse-Engineering/commonlibsf-template-xmake
+cd commonlibsf-template-xmake
 ```
 
 ## Building
