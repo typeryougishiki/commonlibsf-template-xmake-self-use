@@ -1,7 +1,7 @@
 -- set minimum xmake version
 set_xmakever("2.8.2")
 
--- add starfield-re-xrepo repository
+-- add commonlibsf-xrepo repository
 add_repositories("re https://github.com/Starfield-Reverse-Engineering/commonlibsf-xrepo")
 
 -- set project
