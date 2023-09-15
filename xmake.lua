@@ -5,7 +5,7 @@ set_xmakever("2.8.2")
 add_repositories("re https://github.com/Starfield-Reverse-Engineering/commonlibsf-xrepo")
 
 -- set project
-set_project("template-commonlibsf")
+set_project("commonlibsf-template")
 set_version("0.0.0")
 set_license("GPL-3.0")
 
