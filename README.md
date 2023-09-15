@@ -20,6 +20,15 @@ xmake build
 
 > ***Note:*** *This will generate a `build/windows/` directory in the **project's root directory** with the build output.*
 
+## Deploy
+To deploy the project, run the following command: (Replace OUTPUT_PATH with your desired output path)
+```properties
+xmake build
+xmake install -o OUTPUT_PATH
+```
+
+> ***Note:*** *This will generate a `sfse/plugins/` directory in the specified output path with the dll and pdb.*
+
 ## Project Generation (Optional)
 
 ### Visual Studio
