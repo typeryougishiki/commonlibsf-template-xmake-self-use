@@ -7,14 +7,14 @@ This is a basic plugin template using CommonLibSF.
 * C++23 Compiler (MSVC)
 
 ## Getting Started
-```bat
+```properties
 git clone https://github.com/Starfield-Reverse-Engineering/commonlibsf-template-xmake
 cd commonlibsf-template-xmake
 ```
 
 ## Building
 To build the project, run the following command:
-```bat
+```properties
 xmake build
 ```
 
@@ -24,7 +24,7 @@ xmake build
 
 ### Visual Studio
 If you want to generate a Visual Studio project, run the following command:
-```bat
+```properties
 xmake project -k vsxmake
 ```
 
@@ -32,7 +32,7 @@ xmake project -k vsxmake
 
 ### Visual Studio Code
 If you want to enable intellisense in Visual Studio Code, install the `clangd` extension and run the following command:
-```bat
+```properties
 xmake project -k compile_commands --lsp=clangd
 ```
 
