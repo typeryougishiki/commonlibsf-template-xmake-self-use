@@ -13,8 +13,10 @@ set_license("GPL-3.0")
 set_languages("c++23")
 set_optimize("faster")
 set_warnings("allextra", "error")
+set_defaultmode("releasedbg")
 
 -- add rules
+add_rules("mode.releasedbg", "mode.debug")
 add_rules("plugin.vsxmake.autoupdate")
 
 -- require packages
