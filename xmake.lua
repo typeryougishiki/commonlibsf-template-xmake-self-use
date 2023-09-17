@@ -24,7 +24,7 @@ add_requires("commonlibsf")
 
 target("commonlibsf-template")
     -- add packages
-    add_packages("commonlibsf", "spdlog")
+    add_packages("commonlibsf")
 
     -- add commonlibsf plugin
     add_rules("@commonlibsf/plugin", {
