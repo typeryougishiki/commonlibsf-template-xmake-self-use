@@ -1,7 +1,7 @@
 -- set minimum xmake version
 set_xmakever("2.8.2")
 
--- add commonlibsf-xrepo repository
+-- add custom package repository
 add_repositories("re https://github.com/Starfield-Reverse-Engineering/commonlibsf-xrepo")
 
 -- set project
@@ -19,11 +19,12 @@ set_defaultmode("releasedbg")
 add_rules("mode.releasedbg", "mode.debug")
 add_rules("plugin.vsxmake.autoupdate")
 
--- require packages
+-- require package dependencies
 add_requires("commonlibsf")
 
+-- setup targets
 target("commonlibsf-template")
-    -- add packages
+    -- bind package dependencies
     add_packages("commonlibsf")
 
     -- add commonlibsf plugin
