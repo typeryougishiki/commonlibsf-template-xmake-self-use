@@ -7,7 +7,7 @@ add_repositories("re https://github.com/Starfield-Reverse-Engineering/commonlibs
 includes("commonlibsf_plugin_without_plugin_cpp.lua")
 
 -- set project
-set_project("commonlibsf-template")
+set_project(project_name)
 set_version("0.0.0")
 set_license("GPL-3.0")
 
@@ -20,20 +20,22 @@ set_defaultmode("releasedbg")
 -- add rules
 add_rules("mode.releasedbg", "mode.debug")
 add_rules("plugin.vsxmake.autoupdate")
+add_rules("plugin.compile_commands.autoupdate", {lsp = "clangd"})
 
 -- require package dependencies
 add_requires("commonlibsf")
 add_requires("simpleini")
 
 -- setup targets
-target("commonlibsf-template")
+target(project_name)
     -- bind package dependencies
     add_packages("commonlibsf")
     add_packages("simpleini")
     -- add commonlibsf plugin
     add_rules("commonlibsf_plugin_without_plugin_cpp", {
+        name = project_name,
         author = "Author Name",
-        description = "Plugin Description",
+        description = "Plugin Description"
         email = "user@site.com"
     })
     -- add source files
@@ -46,3 +48,8 @@ target("commonlibsf-template")
     end
     add_dir_as_source_and_include("src")
     add_dir_as_source_and_include("src/utils")
+
+    on_install(function (target)
+        import("target.action.install.windows")
+        windows.install_binary(target, {bindir = "sfse/plugins"})
+    end)
