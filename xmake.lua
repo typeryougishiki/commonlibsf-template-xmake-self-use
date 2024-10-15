@@ -6,6 +6,8 @@ add_repositories("re https://github.com/Starfield-Reverse-Engineering/commonlibs
 -- import changed commonlibsf plugin rule , this rule don't create plugin.cpp
 includes("commonlibsf_plugin_without_plugin_cpp.lua")
 
+project_name = "commonlibsf-template"
+
 -- set project
 set_project(project_name)
 set_version("0.0.0")
@@ -35,7 +37,7 @@ target(project_name)
     add_rules("commonlibsf_plugin_without_plugin_cpp", {
         name = project_name,
         author = "Author Name",
-        description = "Plugin Description"
+        description = "Plugin Description",
         email = "user@site.com"
     })
     -- add source files
